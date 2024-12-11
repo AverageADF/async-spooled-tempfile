@@ -1,0 +1,17 @@
+[package]
+name = "async-spooled-tempfile"
+version = "0.1.0"
+categories = ["filesystem"]
+description = "Asynchronous spooled temporary file"
+edition = "2021"
+keywords = ["async", "spooled", "tempfile", "filesystem"]
+rust-version = "1.70"
+documentation = "https://docs.rs/async-spooled-tempfile"
+repository = "https://github.com/AverageADF/async-spooled-tempfile"
+
+[dependencies]
+tempfile = "3.14.0"
+tokio = { version = "1.42", features = ["fs", "io-util", "rt"], default-features = false }
+
+[dev-dependencies]
+tokio = { version = "1.42", features = ["rt", "macros", "io-util"], default-features = false }
